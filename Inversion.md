@@ -1,18 +1,18 @@
-# Insertion Finding
+# Inversion Finding
 
-## What is Insertion?
+## What is Inversion?
 
-In the context of an array, an insertion refers to a situation where there exist two indices $i$ and $j$ where
+In the context of an array, an Inversion refers to a situation where there exist two indices $i$ and $j$ where
 
 $$0 < i < j < arr.length$$
 
 such that $$arr[i] > arr[j]$$
 
-Mathematically, if $arr[i]$ is greater than $arr[j]$, violating the order of the array, then this pair $(arr[i], arr[j])$ constitutes an insertion.
+Mathematically, if $arr[i]$ is greater than $arr[j]$, violating the order of the array, then this pair $(arr[i], arr[j])$ constitutes an Inversion.
 
-## How to Find Insertions?
+## How to Find Inversions?
 
-Insertions can be found using various algorithms. One efficient approach is to use a modified version of the merge sort algorithm. During the merge step, while merging two sorted subarrays, the count of insertions can be incremented whenever an element from the right subarray is moved before an element from the left subarray.
+Inversions can be found using various algorithms. One efficient approach is to use a modified version of the merge sort algorithm. During the merge step, while merging two sorted subarrays, the count of Inversions can be incremented whenever an element from the right subarray is moved before an element from the left subarray.
 
 ## Algorithm in Pseudocode
 
@@ -66,7 +66,7 @@ void mergeSort(std::vector<int>& arr, int l, int r, int& count);
 
 // Function to sort and count inversions
 int Sort_Count(std::vector<int>& arr) {
-    int count = 0; // Initialize insertion count to 0
+    int count = 0; // Initialize Inversion count to 0
     mergeSort(arr, 0, static_cast<int>(arr.size() - 1), count);
     return count;
 }
@@ -105,7 +105,7 @@ void merge(std::vector<int>& arr, int l, int m, int r, int& count) {
             i++;
         } else {
             /* From L[i] to L[n1-1] all > R[j]
-             *->  found n1 - i insertions
+             *->  found n1 - i Inversions
              */
             std::swap(arr[k], R[j]);
             j++;
