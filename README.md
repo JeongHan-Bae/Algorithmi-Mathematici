@@ -4,6 +4,9 @@
 
 ### Menu
 
+## I
+- [Insertion Count Algorithm](Insertion.md)
+
 ## F
 - [Fast Fibonacci Algorithm](Fibonacci.md)
 
