@@ -20,40 +20,40 @@ $$f(n) = f(n-1) + f(n-2)$$
 
 ### Pseudocode:
 
-```pseudocode
-FUNCTION Fibonacci(n):
-    IF n < 0:
-        RETURN INVALID_INPUT
-    IF n == 0:
-        RETURN 0
-    IF n == 1:
-        RETURN 1
+```python
+Function Fibonacci(n) -> Integer:
+    If n < 0:
+        Return INVALID_INPUT
+    If n == 0:
+        Return 0
+    If n == 1:
+        Return 1
 
-    ARRAY Fibonacci_Arr[n + 1]
-    FOR i FROM 0 TO n:
+    Array Fibonacci_Arr[n + 1]
+    For i from 0 to n:
         Fibonacci_Arr[i] = UNDEFINED
-    END FOR
+    End For
 
     Fibonacci_Arr[0] = 0
     Fibonacci_Arr[1] = 1
     Fibonacci_Arr[2] = 1
 
-    RETURN FibonacciHelper(n, Fibonacci_Arr)
+    Return FibonacciHelper(n, Fibonacci_Arr)
 
-FUNCTION FibonacciHelper(n, memo):
-    IF memo[n] is not UNDEFINED:
-        RETURN memo[n]
+Function FibonacciHelper(n, memo) -> Integer:
+    If memo[n] is not UNDEFINED:
+        Return memo[n]
 
     more = FibonacciHelper(n / 2 + 1, memo)
     less = FibonacciHelper(n / 2, memo)
 
-    IF n % 2 == 1:
+    If n % 2 == 1:
         memo[n] = more * more + less * less
-    ELSE:
+    Else:
         memo[n] = less * (2 * more - less)
-    END IF
+    End If
 
-    RETURN memo[n]
+    Return memo[n]
 ```
 
 ### C++ Implementation:
