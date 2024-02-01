@@ -13,8 +13,12 @@
 Navigate through our repository to explore algorithms classified under these distinct categories. Whether you seek speed, optimization, or resilience, Algorithmi-Mathematici has something to offer. As the ancient Romans would declare, **"Veni, Vidi, Vici"** - I came, I saw, I conquered. Join us on this odyssey, as we journey together towards the celestial realm of algorithms and numbers. 🚀✨🛡️
 ### Menu
 
-## I
-- [Inversion Count Algorithm](Inversion.md) **-> Better✨**
 
 ## F
 - [Fibonacci Algorithm](Fibonacci.md) **-> Faster🚀**
+
+## I
+- [Inversion Count Algorithm](Inversion.md) **-> Better✨**
+
+## L
+- [Longest Increasing Subsequence Finding](LIS_Finding.md) **-> Better✨**
