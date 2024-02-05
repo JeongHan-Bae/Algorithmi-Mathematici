@@ -24,5 +24,5 @@ Navigate through our repository to explore algorithms classified under these dis
 - **[Longest Increasing Subsequence Finding](LIS_Finding.md) -> Better✨**
 
 ## P
-- **[Pascal Triangle First Occurrence](Pascal_First_Occ.md) -> Faster🚀**
+- **[Pascal's Triangle First Occurrence](Pascal_First_Occ.md) -> Faster🚀**
 
