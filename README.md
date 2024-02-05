@@ -15,10 +15,14 @@ Navigate through our repository to explore algorithms classified under these dis
 
 
 ## F
-- [Fibonacci Algorithm](Fibonacci.md) **-> Faster🚀**
+- **[Fibonacci Algorithm](Fibonacci.md) -> Faster🚀**
 
 ## I
-- [Inversion Count Algorithm](Inversion.md) **-> Better✨**
+- **[Inversion Count Algorithm](Inversion.md) -> Better✨**
 
 ## L
-- [Longest Increasing Subsequence Finding](LIS_Finding.md) **-> Better✨**
+- **[Longest Increasing Subsequence Finding](LIS_Finding.md) -> Better✨**
+
+## P
+- **[Pascal Triangle First Occurrence](Pascal_First_Occ.md) -> Faster🚀**
+
