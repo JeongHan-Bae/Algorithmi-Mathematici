@@ -153,12 +153,12 @@ Here's the comparison between the provided algorithm and a traditional brute for
 ### Traditional DP Algorithm
 
 - **Time Complexity**: $O(n)$
-  - Generating Pascal's Triangle up to $sqrt(n) + 1$ requires iterating through each element, leading to linear time complexity.
+  - Generating Pascal's Triangle up to $sqrt(2 * n) + 1$ requires iterating through each element, leading to linear time complexity.
 
 - **Space Complexity**: $O(n)$
   - Pascal's Triangle up to $sqrt(n)$ elements requires storing $sqrt(n)$ rows with $O(sqrt(n))$ elements each, leading to linear space complexity.
 
-The traditional DP algorithm iterates through rows from 0 to $sqrt(n) + 1$. If $n$ is not found within these rows, it is guaranteed to be located at position $(n, 1)$ 
+The traditional DP algorithm iterates through rows from 0 to $sqrt(2 * n) + 1$. If $n$ is not found within these rows, it is guaranteed to be located at position $(n, 1)$ 
 since each row $i$ has $i + 1$ elements and only about half of the elements $i + 1 /2$ need to be considered. Therefore, the time complexity is $O(n)$ and the space complexity is also $O(n)$, proportional to the input size $n$.
 
 ### Comparison
