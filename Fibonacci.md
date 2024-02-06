@@ -1,10 +1,10 @@
-# Fibonacci: Efficient Calculation with Dynamic Programming
+# fibonacci: Efficient Calculation with Dynamic Programming
 
-This file presents an overview of the Fibonacci sequence and introduces an algorithm for calculating Fibonacci numbers using dynamic programming, significantly improving performance, especially for large values of $n$.
+This file presents an overview of the fibonacci sequence and introduces an algorithm for calculating fibonacci numbers using dynamic programming, significantly improving performance, especially for large values of $n$.
 
-## What is Fibonacci?
+## What is fibonacci?
 
-The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with $0$ and $1$.
+The fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with $0$ and $1$.
 
 The sequence begins:
 
@@ -16,36 +16,38 @@ For $n > 1$, each subsequent number $f(n)$ is calculated as the sum of the previ
 
 $$f(n) = f(n-1) + f(n-2)$$
 
-## Fast Fibonacci Algorithm
+## Fast fibonacci Algorithm
 
 ### Pseudocode:
 
 ```python
-Function Fibonacci(n) -> Integer:
+Function fibonacci(n) -> Integer:
     If n < 0:
         Return INVALID_INPUT
     If n == 0:
         Return 0
     If n == 1:
         Return 1
+    End If
 
-    Array Fibonacci_Arr[n + 1]
+    Array fibonacci_arr[n + 1]
     For i from 0 to n:
-        Fibonacci_Arr[i] = UNDEFINED
+        fibonacci_arr[i] = UNDEFINED
     End For
 
-    Fibonacci_Arr[0] = 0
-    Fibonacci_Arr[1] = 1
-    Fibonacci_Arr[2] = 1
+    fibonacci_arr[0] = 0
+    fibonacci_arr[1] = 1
+    fibonacci_arr[2] = 1
 
-    Return FibonacciHelper(n, Fibonacci_Arr)
+    Return fibonacci_helper(n, fibonacci_arr)
 
-Function FibonacciHelper(n, memo) -> Integer:
+Function fibonacci_helper(n, memo) -> Integer:
     If memo[n] is not UNDEFINED:
         Return memo[n]
+    End If
 
-    more = FibonacciHelper(n / 2 + 1, memo)
-    less = FibonacciHelper(n / 2, memo)
+    more = fibonacci_helper(n / 2 + 1, memo)
+    less = fibonacci_helper(n / 2, memo)
 
     If n % 2 == 1:
         memo[n] = more * more + less * less
@@ -64,12 +66,12 @@ Function FibonacciHelper(n, memo) -> Integer:
 
 #define UNDEFINED -1
 
-int FibonacciHelper(int n, std::vector<int>& memo) {
+int fibonacci_helper(int n, std::vector<int>& memo) {
     if (memo[n] != UNDEFINED)
         return memo[n];
 
-    int more = FibonacciHelper(n / 2 + 1, memo);
-    int less = FibonacciHelper(n / 2, memo);
+    int more = fibonacci_helper(n / 2 + 1, memo);
+    int less = fibonacci_helper(n / 2, memo);
 
     if (n % 2 == 1)
         memo[n] = more * more + less * less;
@@ -79,7 +81,7 @@ int FibonacciHelper(int n, std::vector<int>& memo) {
     return memo[n];
 }
 
-int Fibonacci(int n) {
+int fibonacci(int n) {
     if (n < 0)
         return -1; // INVALID_INPUT
     if (n == 0)
@@ -92,15 +94,15 @@ int Fibonacci(int n) {
     memo[1] = 1;
     memo[2] = 1;
 
-    return FibonacciHelper(n, memo);
+    return fibonacci_helper(n, memo);
 }
 
 ```
 
 ## Complexity Analysis
 
-- **Traditional Recursive Approach -> $O(2^n)$ :** The traditional recursive approach to compute Fibonacci numbers has a time complexity of $O(2^n)$, leading to exponential growth in computation time for larger values of $n$.
+- **Traditional Recursive Approach -> $O(2^n)$ :** The traditional recursive approach to compute fibonacci numbers has a time complexity of $O(2^n)$, leading to exponential growth in computation time for larger values of $n$.
 
-- **Dynamic Programming Approach -> $O(n)$ :** By using dynamic programming, the time complexity of computing Fibonacci numbers can be reduced to $O(n)$. This approach efficiently stores previously computed values and reuses them to compute subsequent Fibonacci numbers, significantly improving performance.
+- **Dynamic Programming Approach -> $O(n)$ :** By using dynamic programming, the time complexity of computing fibonacci numbers can be reduced to $O(n)$. This approach efficiently stores previously computed values and reuses them to compute subsequent fibonacci numbers, significantly improving performance.
 
-- **Improved Algorithm with Dynamic Programming -> $O(log(n))$ :** The provided algorithm, combined with dynamic programming, achieves a time complexity of $O(log(n))$. By utilizing memoization and a divide-and-conquer strategy, the algorithm efficiently computes Fibonacci numbers, offering a considerable speedup, especially for large values of $n$.
+- **Improved Algorithm with Dynamic Programming -> $O(log(n))$ :** The provided algorithm, combined with dynamic programming, achieves a time complexity of $O(log(n))$. By utilizing memoization and a divide-and-conquer strategy, the algorithm efficiently computes fibonacci numbers, offering a considerable speedup, especially for large values of $n$.
