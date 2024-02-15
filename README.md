@@ -20,6 +20,9 @@ Navigate through our repository to explore algorithms classified under these dis
 ## I
 - **[Inversion Count Algorithm](Inversion.md) -> Better✨**
 
+## J
+- **[Josephus Algorithm](Josephus.md) -> Faster🚀**
+
 ## L
 - **[Longest Increasing Subsequence Finding](LIS_Finding.md) -> Better✨**
 
