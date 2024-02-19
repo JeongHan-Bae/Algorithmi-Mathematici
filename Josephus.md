@@ -129,6 +129,7 @@ By utilizing this formula, the improved solution achieves constant time complexi
 int josephus(int n) {
     int k = std::floor(std::log2(n));
     int j = n - static_cast<int>(std::pow(2, k)) + 1;
+    // int j = n - (1 << k) + 1;
     return 2 * j - 1;
 }
 ```
