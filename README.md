@@ -6,7 +6,7 @@
 
 - **Faster Algorithms 🚀:** Indicated by the rocket symbol, these algorithms prioritize speed and efficiency. They excel in situations where a common method exists, and the algorithm provides a notable improvement in time complexity, ensuring quicker results without sacrificing accuracy.
 
-- **Relatively Better Algorithms ✨:**  Symbolized by the shining star, this category encompasses algorithms with improved time complexity among available solutions. The term "relatively" is key here, as these algorithms often stand out without a widely accepted common solution. Their brilliance shines bright in optimizing performance compared to alternatives, even in the absence of a standard benchmark.
+- **Relatively Better Algorithms ✨:**  Symbolized by the shining star, this category encompasses algorithms with better time complexity among available solutions. The term "relatively" is key here, as these algorithms often stand out without a widely accepted common solution. Their brilliance shines bright in optimizing performance compared to alternatives, even in the absence of a standard benchmark.
 
 - **More Robust, More Stable Algorithms 🛡️:** Guarded by the shield, this category emphasizes robustness and stability. Algorithms in this class are less susceptible to pitfalls such as overflow, ensuring reliable performance across a range of scenarios. They provide a sturdy foundation for computational tasks, mitigating potential risks and ensuring consistent results.
 
