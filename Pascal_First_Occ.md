@@ -174,3 +174,6 @@ since each row $i$ has $i + 1$ elements and only about half of the elements $i +
 ## Conclusion
 
 This algorithm efficiently locates the first occurrence of a positive integer in Pascal's Triangle, providing a clear and concise solution for this problem.
+
+
+For more examples and implementations in C++ and Python, visit the [Pascal folder](/Pascal).
