@@ -2,6 +2,8 @@
 
 This file presents an overview of the fibonacci sequence and introduces an algorithm for calculating fibonacci numbers using dynamic programming, significantly improving performance, especially for large values of $n$.
 
+**For robust solution: [Fibonacci Robust](FibonacciR.md) 🛡**
+
 ## What is fibonacci?
 
 The fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with $0$ and $1$.
