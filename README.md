@@ -16,7 +16,7 @@ Navigate through our repository to explore algorithms classified under these dis
 
 ## F
 - **[Fibonacci Algorithm](Fibonacci.md) -> Faster🚀**
-- **[Fibonacci Algorithm: Robust](Fibonacci.md) -> Fast and Robust🚀🛡**
+- **[Fibonacci Algorithm: Robust](FibonacciR.md) -> Fast and Robust🚀🛡**
 
 ## I
 - **[Inversion Count Algorithm](Inversion.md) -> Better✨**
