@@ -30,7 +30,9 @@ Function fibonacci(n, init1 = 0, init2 = 1) -> T:
 ## C++ Realization
 
 ```cpp
-// using a lib which i will upload later
+// Include the necessary header
+#include "jh_matrix.h"
+
 template <typename T>
 T fibonacci(size_t n, T init1 = 0, T init2 = 1) {
     // Define the matrix M for Fibonacci calculation
@@ -60,3 +62,5 @@ T fibonacci(size_t n, T init1 = 0, T init2 = 1) {
 Although both methods operate within the $O(\log n)$ time complexity, the fast dynamic programming method might exhibit better performance due to its interaction with primitive types, 
 while the matrix exponentiation method involves interacting with containers. However, the matrix exponentiation method offers a space-efficient solution with a constant space complexity of $O(1)$, 
 making it suitable for large values of n where memory overhead is a concern. Therefore, the choice between the two methods depends on the specific requirements and constraints of the application.
+
+For the C++ implementation, the provided code utilizes a library called "EasyMat" available at https://github.com/JeongHan-Bae/EasyMat. The header file "jh_matrix.h" from this library is included for matrix operations.
